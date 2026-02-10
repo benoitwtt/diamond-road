@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diamond Road</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#F4F1EC;
+      --text:#111111;
+      --muted:#5A5A5A;
+      --accent:#8A6F4D; /* moss: #4F6F5B | slate: #5C6F82 */
+
+      --container:66ch;
+      --pad-x:clamp(18px, 4vw, 40px);
+      --section:clamp(56px, 8vh, 110px);
+      --radius:14px;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:"Source Serif 4", serif;
+      font-size:19px;
+      line-height:1.65;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+
+    h1,h2,nav,.small,.meta,.cta-link,button,input{
+      font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    }
+
+    h1{
+      font-size:clamp(40px, 5vw, 56px);
+      line-height:1.08;
+      letter-spacing:-0.01em;
+      margin:0 0 10px 0;
+      font-weight:600;
+    }
+
+    h2{
+      font-size:clamp(22px, 3vw, 28px);
+      line-height:1.25;
+      letter-spacing:-0.005em;
+      margin:0 0 16px 0;
+      font-weight:600;
+    }
+
+    p{margin:0 0 1.4em 0}
+
+    .meta{
+      font-size:13px;
+      line-height:1.5;
+      color:var(--muted);
+      letter-spacing:0.04em;
+      text-transform:uppercase;
+    }
+
+    a{color:var(--accent);text-decoration:none;text-underline-offset:.18em}
+    a:hover{text-decoration:underline}
+
+    .wrap{
+      max-width:var(--container);
+      margin:0 auto;
+      padding:0 var(--pad-x);
+    }
+
+    .section{padding:var(--section) 0}
+
+    .rule{
+      height:1px;
+      background:rgba(138,111,77,0.35); /* derived from accent */
+      border:0;
+      margin:24px 0 0 0;
+    }
+
+    /* Hero */
+    header{padding:clamp(32px, 6vh, 72px) 0 0 0}
+    .hero-sub{
+      font-family:"Source Serif 4", serif;
+      font-size:20px;
+      line-height:1.55;
+      margin:0 0 14px 0;
+      color:#2b2b2b;
+    }
+    .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px}
+    .cta-link{font-size:14px;letter-spacing:.02em}
+
+    /* Images */
+    figure{margin:0}
+    .image-band{padding:0 0 var(--section) 0}
+    .image-wide{
+      width:100%;
+      border-radius:var(--radius);
+      display:block;
+      border:1px solid rgba(17,17,17,0.06);
+    }
+    .image-hero{
+      width:100%;
+      display:block;
+      border-radius:0;
+    }
+    .caption{
+      margin-top:10px;
+      color:var(--muted);
+      font-size:14px;
+      font-family:"Inter",sans-serif;
+    }
+
+    /* Lists (minimal) */
+    .lines{margin:0 0 1.4em 0}
+    .lines div{margin:.45em 0}
+
+    /* Footer */
+    footer{
+      padding:36px 0 56px 0;
+      color:var(--muted);
+      font-family:"Inter",sans-serif;
+      font-size:13px;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+
+    <!-- HERO -->
+    <header>
+      <div class="wrap">
+        <h1>Diamond Road</h1>
+        <p class="hero-sub"><em>A quiet cycling expedition through Brazil’s Caminho dos Diamantes.</em></p>
+        <div class="cta-row">
+          <a class="cta-link" href="#apply">→ Request details</a>
+        </div>
+        <hr class="rule" />
+      </div>
+    </header>
+
+    <!-- HERO IMAGE (full-bleed) -->
+    <section class="image-band" aria-label="Hero image">
+      <figure>
+        <img class="image-hero" src="images/hero.jpg" alt="Early light on a quiet dirt road entering the highlands">
+        <figcaption class="caption wrap">Early light on the road into the highlands.</figcaption>
+      </figure>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section id="intro" class="section">
+      <div class="wrap">
+        <h2>INTRODUCTION</h2>
+        <p>The Diamond Road follows one of Brazil’s most historically significant corridors: the Estrada Real – Caminho dos Diamantes, a network of routes established in the 18th century to move diamonds and gold from the interior highlands of Minas Gerais toward the colonial centers of power.</p>
+
+        <p>This is not a smooth, paved cycling holiday.<br>
+        It is a physically demanding, exploratory journey built around long climbs, mixed-surface roads, remote landscapes, and towns that still carry the rhythm of their past.</p>
+
+        <p>Over eleven stages, riders move slowly through geography shaped by extraction, trade, and isolation — experiencing the route at a human pace, through distance and effort rather than curated, pre-packaged moments.</p>
+
+        <p>The Diamond Road rewards patience, endurance, and curiosity.</p>
+      </div>
+    </section>
+
+    <!-- IMAGE SLOT 2 -->
+    <section class="image-band">
+      <div class="wrap">
+        <figure>
+          <img class="image-wide" src="images/town.jpg" alt="Cyclist climbing a cobblestone street in a historic town toward a church">
+          <figcaption class="caption">Climbing through a historic town on stone streets.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- THE EXPERIENCE -->
+    <section class="section">
+      <div class="wrap">
+        <h2>THE EXPERIENCE</h2>
+        <p>Each day follows a simple pattern: wake in a historic town, ride into the highlands, cross quiet valleys and ridgelines, and finish in another small community shaped by different layers of labor and lived history.<br>
+        Some towns still carry the legacy of gold and diamond mining. Others are shaped by modern iron mining, small-scale agriculture, or a gradual shift toward eco-tourism.<br>
+        You move through rolling terrain, dirt-road climbs, rural landscapes, and long stretches of quiet road with limited infrastructure.<br>
+        Distances and terrain shift from day to day, but the experience is unified by steady effort, patient pacing, and openness to discovery.<br>
+        The route follows an historic corridor. Its flow and cadence are shaped to feel like a continuous line through place and history rather than a series of highlights.</p>
+      </div>
+    </section>
+
+    <!-- THE RIDING -->
+    <section class="section">
+      <div class="wrap">
+        <h2>THE RIDING</h2>
+        <p>The Diamond Road is a physically demanding mixed-surface route.<br>
+        Expect:</p>
+        <div class="lines">
+          <div>Predominantly dirt, gravel, and compacted earth</div>
+          <div>Frequent steep climbs, often over 10%, with short sections occasionally exceeding 20%</div>
+          <div>A mix of steep climbs and rolling hills, with little extended flat terrain</div>
+          <div>Short paved connectors between communities, including occasional bone-rattling cobblestones</div>
+        </div>
+        <p>Technical riding skills are less important than endurance, pacing, and familiarity with sustained effort.<br>
+        The reward is depth, not speed.</p>
+      </div>
+    </section>
+
+    <!-- ACCOMMODATION & FOOD -->
+    <section class="section">
+      <div class="wrap">
+        <h2>ACCOMMODATION &amp; FOOD</h2>
+        <p>Each night we stay in simple, comfortable local hotels, primarily in single-occupancy rooms, with shared rooms available for couples.<br>
+        Lodging is selected for cleanliness, character, and alignment with the scale of each town rather than luxury or resort amenities.</p>
+
+        <p>Food is an essential part of the experience:</p>
+        <div class="lines">
+          <div>Regional Minas Gerais cuisine</div>
+          <div>Local restaurants and traditional recipes</div>
+          <div>Generous, satisfying meals after long days on the bike</div>
+        </div>
+        <p>Dinner is where the day settles and stories accumulate.</p>
+      </div>
+    </section>
+
+    <!-- GROUP & SUPPORT -->
+    <section class="section">
+      <div class="wrap">
+        <h2>GROUP &amp; SUPPORT</h2>
+        <div class="lines">
+          <div>Maximum of 7 riders</div>
+          <div>Dedicated support vehicle for luggage transport, snacks, water, and rider support if required</div>
+          <div>Daily logistics coordination</div>
+          <div>Mechanical assistance within practical field limits</div>
+          <div>Emergency and evacuation planning per segment</div>
+        </div>
+        <p>Support is present but discreet.<br>
+        The road remains the central character.</p>
+      </div>
+    </section>
+
+    <!-- IMAGE SLOT 3 -->
+    <section class="image-band">
+      <div class="wrap">
+        <figure>
+          <img class="image-wide" src="images/horses.jpg" alt="Horse riders moving along a red dirt road in the forest">
+          <figcaption class="caption">Daily life along the route.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- WHO THIS TOUR IS FOR -->
+    <section class="section">
+      <div class="wrap">
+        <h2>WHO THIS TOUR IS FOR</h2>
+        <p>Diamond Road is for experienced riders who are comfortable with long, physically demanding days and variable road conditions.<br>
+        It is best suited to riders who:</p>
+        <div class="lines">
+          <div>Enjoy sustained effort over multiple days</div>
+          <div>Are comfortable riding mixed surfaces</div>
+          <div>Value exploration, continuity, and place over speed or competition</div>
+          <div>Are adaptable and self-sufficient in remote environments</div>
+        </div>
+        <p>This is not a race, and it is not a luxury holiday.<br>
+        It is a journey for riders who find meaning in effort, patience, and discovery.</p>
+      </div>
+    </section>
+
+    <!-- INCLUDED / NOT INCLUDED -->
+    <section class="section">
+      <div class="wrap">
+        <h2>WHAT’S INCLUDED</h2>
+        <div class="lines">
+          <div>All accommodation during the tour</div>
+          <div>Daily breakfast and dinner</div>
+          <div>Dedicated support vehicle and logistics</div>
+          <div>Luggage transport between towns</div>
+          <div>Mechanical assistance within practical field limits</div>
+          <div>Route files and daily briefings</div>
+        </div>
+
+        <h2 style="margin-top:40px;">WHAT’S NOT INCLUDED</h2>
+        <div class="lines">
+          <div>Travel to and from the start / end location</div>
+          <div>Lunches, snacks, and drinks during the day</div>
+          <div>Personal bike maintenance beyond field assistance</div>
+          <div>Travel insurance</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATES & PRICING -->
+    <section class="section">
+      <div class="wrap">
+        <h2>DATES &amp; PRICING</h2>
+        <p>Diamond Road is offered on limited departures each year.<br>
+        2026 dates: TBC<br>
+        Price: TBC</p>
+        <p>Final pricing will reflect group size, accommodation, support logistics, and local operating costs.<br>
+        Detailed information will be shared with accepted applicants.</p>
+      </div>
+    </section>
+
+    <!-- IMAGE SLOT 4 -->
+    <section class="image-band">
+      <div class="wrap">
+        <figure>
+          <img class="image-wide" src="images/closing.jpg" alt="A bike resting beside a red dirt road with mountains and a winding track beyond">
+          <figcaption class="caption">The road continuing beyond the day.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- APPLICATION / BOOKING -->
+    <section id="apply" class="section">
+      <div class="wrap">
+        <h2>APPLICATION / BOOKING</h2>
+        <p>Diamond Road is a small-group journey with limited capacity.<br>
+        Interested riders are asked to submit a short application outlining their riding background and experience.<br>
+        This helps ensure the group is well matched and aligned with the nature of the tour.<br>
+        Accepted riders will receive full details on dates, pricing, and next steps.</p>
+      </div>
+    </section>
+
+    <!-- QUESTIONS -->
+    <section class="section" style="padding-top:0;">
+      <div class="wrap">
+        <h2>QUESTIONS</h2>
+	<p>
+	If you have questions about the route, difficulty, or whether Diamond Road is a good fit, we’re happy to discuss.<br>
+	Get in touch via:<br>
+	Email: <a href="mailto:benoit.wtt@gmail.com">benoit.wtt@gmail.com</a><br>
+	Contact form: [link]<br>
+	We’re glad to talk through expectations before you apply.
+	</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap">© Diamond Road. All rights reserved.</div>
+    </footer>
+
+  </main>
+</body>
+</html>
